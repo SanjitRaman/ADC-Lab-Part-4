@@ -1,0 +1,16 @@
+* C:\Users\Sanjit\OneDrive - Imperial College London\Documents [IC]\ADC\Labs\ADC 4\Lab Part 4\ADC Lab Part 4\amplification_stage_1.asc
+V_CC N001 0 5
+R_B N001 v_b 1.86Meg
+R_C N001 V_out 5k
+C1 v_b N002 1µ
+Q1 V_out v_b N003 0 2N2222
+v_in v_in 0 0 AC 1
+V_EE N003 0 -5
+R1 N002 v_in 10k
+.model NPN NPN
+.model PNP PNP
+.lib C:\Users\Sanjit\Documents\LTspiceXVII\lib\cmp\standard.bjt
+;.op
+.ac dec 100 10 100meg
+.backanno
+.end
