@@ -1,0 +1,17 @@
+* C:\Users\Sanjit\OneDrive - Imperial College London\Documents [IC]\ADC\Labs\ADC 4\Lab Part 4\ADC Lab Part 4\differential_amplifier_long_tailed_pair.asc
+V_CC V_CC 0 5
+Q§T2 v_out 0 N002 0 2N2907
+Q§T1 V_EE V_d N002 0 2N2907
+R_C v_out V_EE 2k
+V_EE V_EE 0 -5
+V_d V_d 0 AC 1
+Q§T3 N001 V_b V_CC 0 2N2907
+Q§T4 V_b V_b V_CC 0 2N2907
+Q§T5 N002 N001 V_b 0 2N2907
+R1 N001 V_EE 8600
+.model NPN NPN
+.model PNP PNP
+.lib C:\Users\Sanjit\Documents\LTspiceXVII\lib\cmp\standard.bjt
+.ac dec 100 10 100meg
+.backanno
+.end
